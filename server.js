@@ -5,7 +5,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
-  const filePath = path.join(__dirname, 'statcare_product_v3.html');
+  const filePath = path.join(__dirname, 'statcare_product.html');
   fs.readFile(filePath, (err, data) => {
     if (err) {
       res.writeHead(404);
