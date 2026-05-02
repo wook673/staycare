@@ -1,0 +1,12 @@
+{
+  "name": "staycare",
+  "version": "1.0.0",
+  "description": "STAYCARE 에어비앤비 자동화 청소 서비스 랜딩페이지",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
