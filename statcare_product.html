@@ -584,6 +584,125 @@ body, body * {
   }
   .marquee-track { animation: none !important; }
 }
+
+/* ─────────────────────────────────────────────
+   Responsive — Tablet & Desktop
+   Mobile (default) keeps 500px-wide single-column flow.
+   Larger viewports center the content and expand grids.
+───────────────────────────────────────────── */
+
+/* TABLET — ≥ 600px */
+@media (min-width: 600px) {
+  body {
+    max-width: none;
+    background: var(--navy);
+  }
+  .brand-header,
+  .marquee,
+  .hero,
+  .section,
+  .cta-section,
+  .footer {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brand-header { padding: 1.75rem 2rem 1.25rem; }
+
+  .hero { padding: 4rem 2rem 3rem; }
+  .hero-title { font-size: 44px; line-height: 1.15; letter-spacing: -0.7px; }
+  .hero-sub { font-size: 16px; }
+
+  .section { padding: 4rem 2rem; }
+  .sec-title { font-size: 28px; line-height: 1.25; }
+  .sec-desc { font-size: 14px; }
+
+  /* Module grid → 3-col, last spans 3 */
+  .module-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .module-card.module-wide { grid-column: span 3; }
+
+  /* Service photos already 2-col, add wider gap */
+  .service-photo-grid { gap: 14px; }
+
+  /* Proof grid → 3-col */
+  .proof-grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* Pricing hero scales up */
+  .sub-hero-num { font-size: 56px; }
+
+  /* CTA */
+  .cta-section { padding: 4rem 2rem; }
+  .cta-title { font-size: 28px; }
+
+  /* Marquee — keep smooth, slightly larger items */
+  .marquee-item { font-size: 14px; padding: 0 1.25rem; }
+}
+
+/* DESKTOP — ≥ 960px */
+@media (min-width: 960px) {
+  .brand-header,
+  .marquee,
+  .hero,
+  .section,
+  .cta-section,
+  .footer {
+    max-width: 960px;
+  }
+
+  .brand-header { padding: 2rem 3rem 1.5rem; }
+
+  .hero { padding: 5.5rem 3rem 4rem; }
+  .hero-title { font-size: 56px; letter-spacing: -1px; }
+  .hero-sub { font-size: 17px; }
+
+  .section { padding: 5rem 3rem; }
+  .sec-title { font-size: 34px; }
+  .sec-desc { font-size: 15px; }
+
+  /* Module grid → 4-col, last spans 4 */
+  .module-grid { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .module-card.module-wide { grid-column: span 4; }
+  .module-name { font-size: 15px; }
+
+  /* Service photos → 3-col, wide span removed for clean alignment */
+  .service-photo-grid { grid-template-columns: repeat(3, 1fr); }
+  .service-photo-card.service-photo-wide {
+    grid-column: auto;
+    aspect-ratio: 3/4;
+  }
+
+  /* Proof grid → 6-col since we have 6 items */
+  .proof-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+  /* ROI compare — larger numbers */
+  .roi-col-num { font-size: 30px; }
+
+  /* Pricing hero */
+  .sub-hero-num { font-size: 64px; }
+
+  /* CTA */
+  .cta-section { padding: 5rem 3rem; }
+  .cta-title { font-size: 34px; }
+  .cta-sub { font-size: 15px; }
+
+  /* Footer */
+  .footer { padding: 2rem 3rem; }
+}
+
+/* WIDE — ≥ 1280px */
+@media (min-width: 1280px) {
+  .brand-header,
+  .marquee,
+  .hero,
+  .section,
+  .cta-section,
+  .footer {
+    max-width: 1100px;
+  }
+  .hero-title { font-size: 64px; }
+}
+
 </style>
 </head>
 <body>

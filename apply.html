@@ -376,6 +376,86 @@ button { font-family: inherit; }
 body, body *, .apply-photo-title, .form-title, .success-title {
   word-break: keep-all;
 }
+
+/* ─────────────────────────────────────────────
+   Responsive — Tablet & Desktop
+   Form-focused page: keeps a narrower max even on
+   wide screens so the form doesn't sprawl.
+───────────────────────────────────────────── */
+
+/* TABLET — ≥ 600px */
+@media (min-width: 600px) {
+  body {
+    max-width: none;
+    background: var(--bg);
+  }
+  .apply-header,
+  .apply-photo,
+  .apply-promise,
+  .apply-form-section,
+  .apply-footer {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .apply-header { padding: 1.25rem 2rem; }
+  .apply-back { font-size: 14px; }
+  .apply-brand { font-size: 17px; }
+
+  .apply-photo { height: 340px; }
+  .apply-photo-overlay { padding: 2rem; }
+  .apply-photo-title { font-size: 28px; line-height: 1.2; }
+  .apply-photo-sub { font-size: 14px; }
+
+  .apply-promise { padding: 1.5rem 2rem; }
+  .promise-item { font-size: 15px; padding: 0.5rem 0; }
+
+  .apply-form-section { padding: 2.25rem 2rem 2.5rem; }
+  .form-title { font-size: 26px; }
+  .form-sub { font-size: 14px; }
+  .field-input { font-size: 16px; padding: 1rem 1.125rem; }
+  .submit-btn { padding: 1.125rem; font-size: 16px; }
+
+  .success-card { padding: 2.25rem 2rem; }
+  .success-title { font-size: 22px; }
+  .success-sub { font-size: 14px; }
+}
+
+/* DESKTOP — ≥ 960px */
+@media (min-width: 960px) {
+  .apply-header,
+  .apply-photo,
+  .apply-promise,
+  .apply-form-section,
+  .apply-footer {
+    max-width: 720px;
+  }
+
+  .apply-photo { height: 420px; }
+  .apply-photo-overlay { padding: 2.5rem; }
+  .apply-photo-title { font-size: 34px; line-height: 1.2; }
+  .apply-photo-sub { font-size: 15px; }
+
+  .apply-promise { padding: 1.75rem 2.5rem; }
+
+  .apply-form-section { padding: 2.75rem 2.5rem 3rem; }
+  .form-title { font-size: 30px; }
+  .form-sub { font-size: 15px; }
+  .field { margin-bottom: 1.25rem; }
+}
+
+/* WIDE — ≥ 1280px */
+@media (min-width: 1280px) {
+  .apply-header,
+  .apply-photo,
+  .apply-promise,
+  .apply-form-section,
+  .apply-footer {
+    max-width: 800px;
+  }
+  .apply-photo { height: 480px; }
+}
 </style>
 </head>
 <body>
