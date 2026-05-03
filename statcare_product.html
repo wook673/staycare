@@ -50,6 +50,14 @@
   font-weight: 700;
   src: url('file:///usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc') format('truetype');
 }
+/* 여기어때 잘난체 고딕 — noonnu CDN */
+@font-face {
+  font-family: 'JalnanGothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 </style>
 <style>
 :root {
@@ -62,7 +70,7 @@
   --pet:#C47B2A;--pet-l:#E89A50;--pet-bg:#1C1208;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system-ui,sans-serif;max-width:500px;margin:0 auto;font-size:14px;line-height:1.6;}
+body{background:var(--navy);color:var(--ivory);font-family:'JalnanGothic',"Noto Sans KR",system-ui,sans-serif;max-width:500px;margin:0 auto;font-size:14px;line-height:1.6;}
 
 /* HEADER */
 .brand-header{padding:1.5rem 1.5rem 1rem;border-bottom:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
@@ -75,7 +83,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:1.5rem;font-size:11px;color:var(--teal);font-weight:500;letter-spacing:1.5px;text-transform:uppercase;}
 .pulse{width:7px;height:7px;background:var(--teal);border-radius:50%;animation:pulse 2s ease-in-out infinite;}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.7);}}
-.hero-title{font-family:"Noto Serif KR",serif;font-size:36px;font-weight:700;line-height:1.2;letter-spacing:-0.5px;margin-bottom:1.25rem;color:var(--ivory);}
+.hero-title{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:36px;font-weight:700;line-height:1.2;letter-spacing:-0.5px;margin-bottom:1.25rem;color:var(--ivory);}
 .hero-title .coral{color:var(--coral-l);}
 .hero-title .teal{color:var(--teal);}
 .hero-sub{font-size:13px;color:var(--muted);line-height:1.8;border-left:2px solid var(--coral);padding-left:1rem;}
@@ -83,7 +91,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 /* SECTION */
 .section{padding:2.5rem 1.5rem;border-bottom:0.5px solid var(--border);}
 .sec-label{font-family:"Playfair Display",serif;font-size:10px;color:var(--coral);letter-spacing:3px;text-transform:uppercase;margin-bottom:0.5rem;}
-.sec-title{font-family:"Noto Serif KR",serif;font-size:22px;font-weight:700;color:var(--ivory);line-height:1.3;margin-bottom:1.5rem;}
+.sec-title{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:22px;font-weight:700;color:var(--ivory);line-height:1.3;margin-bottom:1.5rem;}
 .sec-desc{font-size:13px;color:var(--muted);line-height:1.8;}
 
 /* STEP INDICATOR */
@@ -103,12 +111,12 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 .rs-star-filled{color:#FF4444;font-size:15px;}
 .rs-star-empty{color:#E0E0E0;font-size:15px;}
 .rs-score-row{display:flex;align-items:center;gap:6px;}
-.rs-score{font-size:13px;font-weight:700;color:#FF4444;font-family:"Noto Sans KR",sans-serif;}
-.rs-date{font-size:10px;color:#999;font-family:"Noto Sans KR",sans-serif;}
-.rs-platform{background:#F5F5F5;border-radius:4px;padding:2px 8px;font-size:10px;color:#666;font-family:"Noto Sans KR",sans-serif;white-space:nowrap;}
-.rs-user{font-size:11px;color:#888;font-family:"Noto Sans KR",sans-serif;margin-bottom:6px;}
+.rs-score{font-size:13px;font-weight:700;color:#FF4444;font-family:'JalnanGothic',"Noto Sans KR",sans-serif;}
+.rs-date{font-size:10px;color:#999;font-family:'JalnanGothic',"Noto Sans KR",sans-serif;}
+.rs-platform{background:#F5F5F5;border-radius:4px;padding:2px 8px;font-size:10px;color:#666;font-family:'JalnanGothic',"Noto Sans KR",sans-serif;white-space:nowrap;}
+.rs-user{font-size:11px;color:#888;font-family:'JalnanGothic',"Noto Sans KR",sans-serif;margin-bottom:6px;}
 .rs-divider{height:0.5px;background:#F0F0F0;margin-bottom:8px;}
-.rs-text{font-size:12px;color:#333;line-height:1.65;font-family:"Noto Sans KR",sans-serif;}
+.rs-text{font-size:12px;color:#333;line-height:1.65;font-family:'JalnanGothic',"Noto Sans KR",sans-serif;}
 .rs-highlight{color:var(--danger);font-weight:700;}
 .fear-verdict{background:#120606;border-radius:8px;padding:1rem;margin-top:1rem;text-align:center;}
 .fear-verdict .big{font-family:"Playfair Display",serif;font-size:13px;color:var(--danger);font-weight:700;display:block;margin-bottom:4px;}
@@ -117,7 +125,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 /* IDENTITY */
 .identity-card{background:var(--navy-2);border:0.5px solid var(--border);border-radius:14px;padding:1.5rem;margin-bottom:1rem;}
 .identity-num{font-family:"Playfair Display",serif;font-size:52px;font-weight:900;color:var(--navy-3);line-height:1;margin-bottom:0.75rem;letter-spacing:-2px;}
-.identity-title{font-family:"Noto Serif KR",serif;font-size:15px;font-weight:700;color:var(--ivory);margin-bottom:0.5rem;}
+.identity-title{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:15px;font-weight:700;color:var(--ivory);margin-bottom:0.5rem;}
 .identity-desc{font-size:12px;color:var(--muted);line-height:1.7;}
 .identity-tag{display:inline-block;background:var(--coral);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:0.5px;margin-top:0.875rem;}
 
@@ -128,7 +136,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 .service-photo-card.service-photo-wide{grid-column:1 / -1;aspect-ratio:16/9;}
 .service-photo-overlay{position:absolute;bottom:0;left:0;right:0;padding:0.875rem;background:linear-gradient(to top,rgba(8,12,20,0.95) 0%,rgba(8,12,20,0.6) 60%,transparent 100%);}
 .service-photo-tag{display:inline-block;background:var(--teal);color:#02120A;font-size:9px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:0.5px;margin-bottom:4px;}
-.service-photo-title{font-family:"Noto Serif KR",serif;font-size:13px;font-weight:700;color:var(--ivory);line-height:1.3;display:block;margin-bottom:2px;}
+.service-photo-title{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:13px;font-weight:700;color:var(--ivory);line-height:1.3;display:block;margin-bottom:2px;}
 .service-photo-desc{font-size:10px;color:var(--muted);line-height:1.4;}
 
 /* PHYTONCIDE */
@@ -151,11 +159,46 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 .roi-header{background:var(--danger);padding:0.875rem 1.25rem;font-family:"Playfair Display",serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;}
 .roi-row{display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1.25rem;border-bottom:0.5px solid var(--border);gap:1rem;}
 .roi-row:last-child{border-bottom:none;}
+.roi-row.roi-row-total{background:rgba(232,87,42,0.08);}
+.roi-row.roi-row-total .roi-label{color:var(--ivory);font-weight:700;}
 .roi-label{font-size:12px;color:var(--muted);flex:1;}
 .roi-value{font-size:13px;font-weight:700;text-align:right;flex-shrink:0;}
 .roi-value.red{color:var(--danger);}
 .roi-value.green{color:var(--teal);}
 .roi-bridge{text-align:center;padding:1rem 1.5rem 0;font-size:12px;color:var(--muted-2);line-height:1.6;}
+
+/* ROI Compare Hero — 직접관리 vs 패키지 */
+.roi-compare{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:stretch;margin-bottom:0.875rem;}
+.roi-compare-col{background:var(--navy-2);border:0.5px solid var(--border);border-radius:14px;padding:1rem 0.75rem;text-align:center;display:flex;flex-direction:column;justify-content:space-between;}
+.roi-col-bad{border-color:rgba(232,87,42,0.45);background:rgba(232,87,42,0.06);}
+.roi-col-good{border-color:rgba(29,200,160,0.45);background:rgba(29,200,160,0.06);}
+.roi-col-label{font-family:"Playfair Display",serif;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:0.625rem;}
+.roi-col-bad .roi-col-label{color:var(--danger);}
+.roi-col-good .roi-col-label{color:var(--teal);}
+.roi-col-num{font-family:"Playfair Display",serif;font-size:24px;font-weight:900;color:var(--ivory);letter-spacing:-0.5px;line-height:1;}
+.roi-col-num .unit{font-size:12px;font-weight:400;color:var(--muted);margin-left:2px;}
+.roi-col-sub{font-size:10px;color:var(--muted-2);margin-top:0.5rem;line-height:1.35;}
+.roi-compare-vs{display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:12px;color:var(--muted);font-style:italic;padding:0 2px;}
+
+.roi-savings{background:linear-gradient(90deg,rgba(29,200,160,0.14) 0%,rgba(29,200,160,0.04) 100%);border:1px solid rgba(29,200,160,0.32);border-radius:12px;padding:0.875rem 1rem;text-align:center;font-size:12px;color:var(--ivory-2);margin-bottom:1.25rem;letter-spacing:-0.2px;line-height:1.5;}
+.roi-savings strong{color:var(--teal);font-weight:900;font-size:18px;display:inline-block;letter-spacing:-0.3px;font-family:"Playfair Display",serif;margin:0 2px;}
+
+/* Package Modules Grid */
+.module-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1rem;}
+.module-card{background:var(--navy-2);border:0.5px solid var(--border);border-radius:14px;padding:0.875rem 1rem;display:flex;flex-direction:column;gap:0.4rem;}
+.module-card.module-wide{grid-column:1/-1;}
+.module-num{font-family:"Playfair Display",serif;font-size:9px;font-weight:700;letter-spacing:1.5px;color:var(--teal);text-transform:uppercase;}
+.module-icon{width:32px;height:32px;background:rgba(29,200,160,0.1);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;}
+.module-name{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:14px;font-weight:700;color:var(--ivory);line-height:1.25;letter-spacing:-0.2px;}
+.module-desc{font-size:11px;color:var(--muted);line-height:1.45;}
+
+.module-summary{margin-top:0.875rem;padding:0.75rem 1rem;background:rgba(29,200,160,0.08);border-radius:10px;font-size:11px;color:var(--ivory-2);text-align:center;letter-spacing:-0.2px;line-height:1.5;}
+.module-summary strong{color:var(--teal);font-weight:700;}
+
+.module-addon-hint{display:flex;gap:10px;align-items:flex-start;margin-top:0.625rem;padding:0.875rem 1rem;background:rgba(232,87,42,0.06);border:1px dashed rgba(232,87,42,0.32);border-radius:12px;}
+.addon-pin{flex-shrink:0;font-family:"Playfair Display",serif;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--coral-l);background:rgba(232,87,42,0.14);padding:3px 8px;border-radius:6px;height:fit-content;}
+.addon-text{flex:1;font-size:12px;color:var(--ivory-2);line-height:1.5;letter-spacing:-0.2px;}
+.addon-text strong{color:var(--coral-l);font-weight:700;}
 
 /* PACKAGES */
 .pkg-grid{display:flex;flex-direction:column;gap:10px;}
@@ -166,7 +209,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 .pkg.featured .pkg-eyebrow{color:var(--coral);}
 .pkg.pet-pkg .pkg-eyebrow{color:var(--pet-l);}
 .pkg-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:1rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border);}
-.pkg-name{font-family:"Noto Serif KR",serif;font-size:17px;font-weight:700;color:var(--ivory);display:block;margin-bottom:3px;}
+.pkg-name{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:17px;font-weight:700;color:var(--ivory);display:block;margin-bottom:3px;}
 .pkg.featured .pkg-name{color:var(--coral-l);}
 .pkg.pet-pkg .pkg-name{color:var(--pet-l);}
 .pkg-sub{font-size:11px;color:var(--muted);}
@@ -193,22 +236,21 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 .pet-img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;}
 .pet-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,16,8,0.95) 0%,rgba(28,16,8,0.75) 20%,rgba(28,16,8,0.2) 50%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.25rem 1.5rem;}
 .pet-img-badge{display:inline-block;background:var(--pet);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:0.5px;margin-bottom:0.5rem;width:fit-content;}
-.pet-img-copy{font-family:"Noto Serif KR",serif;font-size:17px;font-weight:700;color:var(--ivory);line-height:1.35;}
+.pet-img-copy{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:17px;font-weight:700;color:var(--ivory);line-height:1.35;}
 .pet-pain{background:rgba(0,0,0,0.3);border:0.5px solid rgba(232,64,64,0.2);border-radius:10px;padding:1rem 1.125rem;margin-bottom:0.875rem;}
 .pet-pain-title{font-size:11px;font-weight:700;color:#E84040;letter-spacing:0.5px;margin-bottom:0.625rem;}
 .pet-pain-list{display:flex;flex-direction:column;gap:5px;}
 .pet-pain-item{font-size:12px;color:#7A5555;display:flex;align-items:center;gap:8px;}
 .x-icon{color:#E84040;font-size:11px;font-weight:700;flex-shrink:0;}
 .pet-solve{text-align:center;margin-bottom:0.25rem;}
-.pet-solve-title{font-family:"Noto Serif KR",serif;font-size:14px;font-weight:700;color:var(--pet-l);}
+.pet-solve-title{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:14px;font-weight:700;color:var(--pet-l);}
 .pet-benefit{background:rgba(196,123,42,0.06);border:0.5px solid rgba(196,123,42,0.2);border-radius:10px;padding:0.25rem 0;margin-top:1rem;}
 .pet-benefit-row{display:flex;gap:0.875rem;align-items:flex-start;padding:0.875rem 1rem;border-bottom:0.5px solid rgba(196,123,42,0.15);}
 .pet-benefit-row:last-child{border-bottom:none;}
-.pet-benefit-icon{font-size:18px;flex-shrink:0;margin-top:1px;}
+.pet-benefit-num{font-family:"Playfair Display",serif;font-size:14px;font-weight:700;color:var(--coral-l);letter-spacing:0.5px;flex-shrink:0;margin-top:2px;width:22px;}
 .pet-benefit-title{display:block;font-size:12px;font-weight:700;color:var(--pet-l);margin-bottom:3px;}
 .pet-benefit-desc{display:block;font-size:11px;color:var(--muted-2);line-height:1.5;}
 .pet-notice{background:rgba(196,123,42,0.08);border:0.5px solid rgba(196,123,42,0.3);border-radius:10px;padding:0.875rem 1rem;margin-top:0.875rem;display:flex;gap:8px;align-items:flex-start;}
-.pet-notice-icon{font-size:16px;flex-shrink:0;margin-top:1px;}
 .pet-notice-text{font-size:11px;color:var(--pet-l);line-height:1.6;}
 
 /* PROOF */
@@ -220,7 +262,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 /* CTA */
 .cta-section{padding:2.5rem 1.5rem;background:var(--navy-2);border-top:0.5px solid var(--border);}
 .cta-brand{font-family:"Playfair Display",serif;font-size:12px;letter-spacing:3px;color:var(--coral);font-weight:700;text-transform:uppercase;margin-bottom:0.5rem;}
-.cta-title{font-family:"Noto Serif KR",serif;font-size:24px;font-weight:700;color:var(--ivory);margin-bottom:0.5rem;line-height:1.3;}
+.cta-title{font-family:'JalnanGothic',"Noto Serif KR",serif;font-size:24px;font-weight:700;color:var(--ivory);margin-bottom:0.5rem;line-height:1.3;}
 .cta-sub{font-size:12px;color:var(--muted);margin-bottom:1.5rem;line-height:1.7;}
 .cta-btn{display:block;background:var(--coral);color:#fff;font-size:15px;font-weight:700;padding:1rem 1.5rem;border-radius:10px;border:none;width:100%;cursor:pointer;letter-spacing:0.5px;text-align:center;margin-bottom:0.75rem;}
 .cta-note{font-size:11px;color:var(--muted-2);text-align:center;line-height:1.6;}
@@ -246,7 +288,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 .sub-hero-unit {
   font-size: 20px;
   color: var(--muted);
-  font-family: "Noto Serif KR", serif;
+  font-family: 'JalnanGothic',"Noto Serif KR", serif;
 }
 .sub-hero-label {
   font-size: 12px;
@@ -280,7 +322,7 @@ body{background:var(--navy);color:var(--ivory);font-family:"Noto Sans KR",system
 }
 .sub-plan-left {}
 .sub-plan-term {
-  font-family: "Noto Serif KR", serif;
+  font-family: 'JalnanGothic',"Noto Serif KR", serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--ivory);
@@ -420,6 +462,128 @@ body, body * {
 .review-body, .rs-score-row {
   letter-spacing: 0 !important;
 }
+
+/* ─────────────────────────────────────────────
+   Framer-style Reveal Animation System
+───────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: perspective(1200px) translateY(40px);
+  transition:
+    opacity 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: var(--rd, 0s);
+  will-change: transform, opacity;
+}
+.reveal-down { transform: perspective(1200px) translateY(-40px); }
+.reveal-big  { transform: perspective(1200px) translateY(100px); }
+.reveal-far  { transform: perspective(1200px) translateY(-150px); }
+
+.reveal.is-in,
+.reveal-down.is-in,
+.reveal-big.is-in,
+.reveal-far.is-in {
+  opacity: 1;
+  transform: perspective(1200px) translateY(0);
+}
+
+/* Stagger — module grid */
+.module-grid .module-card:nth-child(1).reveal { --rd: 0.04s; }
+.module-grid .module-card:nth-child(2).reveal { --rd: 0.10s; }
+.module-grid .module-card:nth-child(3).reveal { --rd: 0.16s; }
+.module-grid .module-card:nth-child(4).reveal { --rd: 0.22s; }
+.module-grid .module-card:nth-child(5).reveal { --rd: 0.28s; }
+.module-grid .module-card:nth-child(6).reveal { --rd: 0.34s; }
+.module-grid .module-card:nth-child(7).reveal { --rd: 0.40s; }
+
+/* Stagger — hero */
+.hero-eyebrow.reveal { --rd: 0s; }
+.hero-title.reveal   { --rd: 0.10s; }
+.hero-sub.reveal     { --rd: 0.20s; }
+
+/* Stagger — section heads */
+.sec-label.reveal { --rd: 0s; }
+.sec-title.reveal { --rd: 0.08s; }
+.sec-desc.reveal  { --rd: 0.16s; }
+
+/* Stagger — proof grid */
+.proof-grid .proof-item:nth-child(1).reveal { --rd: 0.04s; }
+.proof-grid .proof-item:nth-child(2).reveal { --rd: 0.10s; }
+.proof-grid .proof-item:nth-child(3).reveal { --rd: 0.16s; }
+.proof-grid .proof-item:nth-child(4).reveal { --rd: 0.22s; }
+.proof-grid .proof-item:nth-child(5).reveal { --rd: 0.28s; }
+.proof-grid .proof-item:nth-child(6).reveal { --rd: 0.34s; }
+
+/* Stagger — review cards */
+.review-shot:nth-of-type(1).reveal { --rd: 0.04s; }
+.review-shot:nth-of-type(2).reveal { --rd: 0.12s; }
+.review-shot:nth-of-type(3).reveal { --rd: 0.20s; }
+
+/* Stagger — identity cards */
+.identity-card:nth-of-type(1).reveal { --rd: 0.04s; }
+.identity-card:nth-of-type(2).reveal { --rd: 0.14s; }
+.identity-card:nth-of-type(3).reveal { --rd: 0.24s; }
+
+/* Stagger — sub plans */
+.sub-plan:nth-of-type(1).reveal { --rd: 0.04s; }
+.sub-plan:nth-of-type(2).reveal { --rd: 0.12s; }
+.sub-plan:nth-of-type(3).reveal { --rd: 0.20s; }
+
+/* ─────────────────────────────────────────────
+   Marquee — Brand Keywords Ticker
+───────────────────────────────────────────── */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy-2);
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+  padding: 0.625rem 0;
+  -webkit-mask-image: linear-gradient(90deg,transparent 0%,#000 6%,#000 94%,transparent 100%);
+          mask-image: linear-gradient(90deg,transparent 0%,#000 6%,#000 94%,transparent 100%);
+}
+.marquee-track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+.marquee-track:hover { animation-play-state: paused; }
+.marquee-item {
+  font-family: 'JalnanGothic',sans-serif;
+  font-size: 13px;
+  color: var(--ivory-2);
+  letter-spacing: 0.4px;
+  padding: 0 1rem;
+  flex-shrink: 0;
+}
+.marquee-item.brand { color: var(--teal); }
+.marquee-dot {
+  display: inline-block;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--coral);
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-down,
+  .reveal-big,
+  .reveal-far {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .marquee-track { animation: none !important; }
+}
 </style>
 </head>
 <body>
@@ -446,17 +610,100 @@ body, body * {
     </svg>
     <div>
       <div class="brand-logo">STAY<span>CARE</span></div>
-      <div style="font-size:10px;color:var(--teal);letter-spacing:1px;font-family:'Playfair Display',serif;margin-top:1px;">Rental Automation Specialist</div>
+      <div style="font-size:10px;color:var(--teal);letter-spacing:1px;font-family:'Playfair Display',serif;margin-top:1px;">단기임대 자동화 패키지</div>
     </div>
   </div>
-  <div class="brand-tagline">단기임대 자동화 전문<br>청소 케어 서비스</div>
+  <div class="brand-tagline">청소 · 관리 · 인증<br>패키지 하나로</div>
 </header>
 
-<!-- ② HERO : 공포 자극 -->
+<!-- ①-2 MARQUEE : 브랜드 키워드 티커 -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item brand">단기임대 자동화 패키지</span><span class="marquee-dot"></span>
+    <span class="marquee-item">청소</span><span class="marquee-dot"></span>
+    <span class="marquee-item">피톤치드 살균</span><span class="marquee-dot"></span>
+    <span class="marquee-item">관리비 알림</span><span class="marquee-dot"></span>
+    <span class="marquee-item">어메니티 리필</span><span class="marquee-dot"></span>
+    <span class="marquee-item">침구 시트 교체</span><span class="marquee-dot"></span>
+    <span class="marquee-item">우편물 알림</span><span class="marquee-dot"></span>
+    <span class="marquee-item">사진 5종 자동 인증</span><span class="marquee-dot"></span>
+    <span class="marquee-item brand">단기임대 자동화 패키지</span><span class="marquee-dot"></span>
+    <span class="marquee-item">청소</span><span class="marquee-dot"></span>
+    <span class="marquee-item">피톤치드 살균</span><span class="marquee-dot"></span>
+    <span class="marquee-item">관리비 알림</span><span class="marquee-dot"></span>
+    <span class="marquee-item">어메니티 리필</span><span class="marquee-dot"></span>
+    <span class="marquee-item">침구 시트 교체</span><span class="marquee-dot"></span>
+    <span class="marquee-item">우편물 알림</span><span class="marquee-dot"></span>
+    <span class="marquee-item">사진 5종 자동 인증</span><span class="marquee-dot"></span>
+  </div>
+</div>
+
+<!-- ② HERO : 패키지 정체성 -->
 <section class="hero">
-  <div class="hero-eyebrow"><span class="pulse"></span>단기임대 전용 솔루션</div>
-  <h1 class="hero-title">단기임대로<br><span class="teal">자동 수익</span> 원하셨죠?<br><span class="coral">청소가 발목</span> 잡습니다</h1>
-  <p class="hero-sub">청소 한 번 직접 다녀오는 순간<br>그건 더 이상 자동 수익이 아닙니다.</p>
+  <div class="hero-eyebrow"><span class="pulse"></span>단기임대 자동화 패키지</div>
+  <h1 class="hero-title">단기임대 자동화는<br><span class="teal">패키지</span>로 완성됩니다</h1>
+  <p class="hero-sub">청소·관리비·어메니티·인증까지<br>패키지 하나로 자동화</p>
+</section>
+
+<!-- ②-2 PACKAGE MODULES : 패키지 정체성 노출 -->
+<section class="section">
+  <div class="sec-label">Package Modules</div>
+  <h2 class="sec-title">단기임대 자동화 패키지<br>= <span class="teal">7개 모듈</span></h2>
+  <p class="sec-desc" style="margin-bottom:1.25rem;">청소부터 관리비 알림까지 — 패키지 하나로 호스트가 신경 쓸 모든 일이 끝납니다.</p>
+
+  <div class="module-grid">
+    <div class="module-card">
+      <span class="module-num">Module 01</span>
+      <div class="module-icon">🧹</div>
+      <span class="module-name">청소</span>
+      <p class="module-desc">침실·욕실·주방·창틀 전체 청소</p>
+    </div>
+    <div class="module-card">
+      <span class="module-num">Module 02</span>
+      <div class="module-icon">🌿</div>
+      <span class="module-name">피톤치드 살균</span>
+      <p class="module-desc">초미세 입자 분사 99.9% 살균·탈취</p>
+    </div>
+    <div class="module-card">
+      <span class="module-num">Module 03</span>
+      <div class="module-icon">📨</div>
+      <span class="module-name">관리비 알림</span>
+      <p class="module-desc">우편함 고지서 사진 즉시 전송</p>
+    </div>
+    <div class="module-card">
+      <span class="module-num">Module 04</span>
+      <div class="module-icon">🧴</div>
+      <span class="module-name">어메니티 리필</span>
+      <p class="module-desc">수건·샴푸·바디워시·치약 보충</p>
+    </div>
+    <div class="module-card">
+      <span class="module-num">Module 05</span>
+      <div class="module-icon">🛏️</div>
+      <span class="module-name">침구 시트 교체</span>
+      <p class="module-desc">매 퇴실마다 새 시트로 교체</p>
+    </div>
+    <div class="module-card">
+      <span class="module-num">Module 06</span>
+      <div class="module-icon">📮</div>
+      <span class="module-name">우편물 알림</span>
+      <p class="module-desc">도착 즉시 사진 알림</p>
+    </div>
+    <div class="module-card module-wide">
+      <span class="module-num">Module 07</span>
+      <div class="module-icon">📸</div>
+      <span class="module-name">사진 5종 자동 인증</span>
+      <p class="module-desc">청소 완료 즉시 5종 사진 전송 — 직접 방문 없이 원격 확인</p>
+    </div>
+  </div>
+
+  <div class="module-summary">
+    <strong>한 번의 신청 = 7개 모듈 자동 실행</strong> · 호스트는 카카오톡 확인만
+  </div>
+
+  <div class="module-addon-hint">
+    <span class="addon-pin">+ Option</span>
+    <p class="addon-text">반려동물 동반 숙소를 운영하시면 <strong>반려동물 패키지</strong>를 옵션 상품으로 추가 구매하실 수 있습니다.</p>
+  </div>
 </section>
 
 <!-- ③ 실제 후기 : 공포 강화 — 바로 후기로 쐐기 박기 -->
@@ -503,16 +750,16 @@ body, body * {
       <p class="rs-text">저희가 첫 고객이라 그런지, <span class="rs-highlight">미비한 부분들이 있었습니다.</span></p>
     </div>
     <div class="fear-verdict">
-      <span class="big">청소 한 번 = 자동수익 아님</span>
-      <span class="small">직접 방문 → 시간 소모 → 부업이 아닌 노동<br>청소 불량 리뷰 → 공실 → 월 30~50만원 손해<br>두 가지 모두 자동 수익을 망가뜨립니다</span>
+      <span class="big">수동 관리로는 자동수익 불가능</span>
+      <span class="small">직접 방문 → 시간 소모 → 부업이 아닌 노동<br>청소 불량 리뷰 → 공실 → 월 30~50만원 손해<br><strong style="color:var(--teal);">그래서 패키지가 필요합니다</strong></span>
     </div>
   </div>
 </section>
 
-<!-- ④ WHY US : 공감 + 신뢰 — "우리도 호스트입니다" -->
+<!-- ④ WHY US : 공감 + 신뢰 — "호스트가 만든 패키지" -->
 <section class="section">
   <div class="sec-label">Why Staycare</div>
-  <h2 class="sec-title">청소 회사가 아닙니다.<br>호스트입니다.</h2>
+  <h2 class="sec-title">청소 대행이 아닙니다.<br>호스트가 만든 <span class="teal">패키지</span>입니다.</h2>
   <div class="identity-card">
     <div class="identity-num">01</div>
     <div class="identity-title">직접 단기임대를 운영합니다</div>
@@ -533,10 +780,10 @@ body, body * {
   </div>
 </section>
 
-<!-- ⑤ 서비스 사진 : 실체감 — "이렇게 합니다" -->
+<!-- ⑤ 서비스 사진 : 실체감 — "패키지 안 청소 모듈 디테일" -->
 <section class="section">
-  <div class="sec-label">Service Detail</div>
-  <h2 class="sec-title">직접 보여드립니다</h2>
+  <div class="sec-label">Module Detail · 청소</div>
+  <h2 class="sec-title">패키지에 들어있는<br>청소 디테일</h2>
   <div class="service-photo-grid">
     <div class="service-photo-card">
       <img id="img_drain" alt="배수구 디테일 청소" />
@@ -566,11 +813,11 @@ body, body * {
   <p class="sec-desc" style="font-size:12px;text-align:center;color:var(--muted-2);">눈에 띄지 않는 곳까지 — 디테일이 후기를 만듭니다</p>
 </section>
 
-<!-- ⑥ Beyond Cleaning : 차별화 — "청소만 하는 게 아닙니다" -->
+<!-- ⑥ Beyond Cleaning : 차별화 — "패키지 안 다른 모듈 디테일" -->
 <section class="section">
-  <div class="sec-label">Beyond Cleaning</div>
-  <h2 class="sec-title">청소만<br>하는 게 아닙니다</h2>
-  <p class="sec-desc" style="margin-bottom:1.25rem;">관리비 고지서·우편물 도착 알림부터 어메니티 리필, 피톤치드 연무 살균까지. 호스트가 신경 쓸 모든 일을 한 번에 처리합니다.</p>
+  <div class="sec-label">Module Detail · 케어</div>
+  <h2 class="sec-title">패키지 안에 들어있는<br>케어 모듈</h2>
+  <p class="sec-desc" style="margin-bottom:1.25rem;">관리비 고지서 알림 · 어메니티 리필 · 피톤치드 살균 — 단기임대 자동화 패키지에 기본 포함된 케어 모듈입니다.</p>
 
   <div class="service-photo-grid">
     <div class="service-photo-card">
@@ -632,28 +879,56 @@ body, body * {
 <!-- ⑦ ROI : 가격 저항 낮추기 — 패키지 보기 직전 -->
 <section class="section">
   <div class="sec-label">비용 분석</div>
-  <h2 class="sec-title">구독 하나로<br>자동 수익 구조 완성</h2>
-  <div class="roi-card">
-    <div class="roi-header">구독 vs 공실 손해</div>
-    <div>
-      <div class="roi-row"><span class="roi-label">구독료 월 1개 방 · 횟수 무관 (월 최대 4회)</span><span class="roi-value green">100,000원 고정</span></div>
-      <div class="roi-row"><span class="roi-label">직접 방문 시 시간 비용 (월 4회)</span><span class="roi-value red">시간 + 교통비 소모</span></div>
-      <div class="roi-row"><span class="roi-label">청소 불량 리뷰 → 공실 손해</span><span class="roi-value red">300,000~500,000원</span></div>
-      <div class="roi-row"><span class="roi-label">오토 패키지 선택 시</span><span class="roi-value green">방문 없이 수익 유지</span></div>
+  <h2 class="sec-title">패키지 10만원이<br>직접 관리 28만원보다 싼 이유</h2>
+  <p class="sec-desc" style="margin-bottom:1.25rem;">시간과 교통비를 환산하면 직접 관리는 패키지 비용의 <strong style="color:var(--ivory);">약 3배</strong>. 보이지 않던 비용이 매월 새고 있었습니다.</p>
+
+  <!-- 비교 헤로 -->
+  <div class="roi-compare">
+    <div class="roi-compare-col roi-col-bad">
+      <div>
+        <div class="roi-col-label">직접 관리</div>
+        <div class="roi-col-num">280,000<span class="unit">원</span></div>
+      </div>
+      <div class="roi-col-sub">월 4회 방문<br>시간 + 교통비 환산</div>
+    </div>
+    <div class="roi-compare-vs">vs</div>
+    <div class="roi-compare-col roi-col-good">
+      <div>
+        <div class="roi-col-label">Staycare 패키지</div>
+        <div class="roi-col-num">100,000<span class="unit">원</span></div>
+      </div>
+      <div class="roi-col-sub">횟수 무관 정액<br>월 최대 4회</div>
     </div>
   </div>
-  <p class="roi-bridge">아래 패키지 중 하나를 선택하세요</p>
+
+  <div class="roi-savings">
+    매월 <strong>180,000원</strong> 절감 + 호스트 시간 회수
+  </div>
+
+  <!-- 환산 근거 -->
+  <div class="roi-card">
+    <div class="roi-header">280,000원이 나오는 근거</div>
+    <div>
+      <div class="roi-row"><span class="roi-label">1회 방문 — 왕복·청소·사진 촬영</span><span class="roi-value">최소 5시간</span></div>
+      <div class="roi-row"><span class="roi-label">시간 환산 — 시간당 10,000원 기준</span><span class="roi-value red">50,000원 / 회</span></div>
+      <div class="roi-row"><span class="roi-label">교통비 — 왕복 유류·통행료</span><span class="roi-value red">20,000원 / 회</span></div>
+      <div class="roi-row roi-row-total"><span class="roi-label">월 4회 직접 방문 합계</span><span class="roi-value red">280,000원</span></div>
+      <div class="roi-row"><span class="roi-label">청소 불량 리뷰 1건당 추가 손해</span><span class="roi-value red">+ 300,000~500,000원</span></div>
+    </div>
+  </div>
+
+  <p class="roi-bridge">패키지 한 번에 시간 + 비용 + 리뷰 리스크까지 정리됩니다<br>아래 패키지 플랜 중 하나를 선택하세요</p>
 </section>
 
 <!-- ⑧ 패키지 : 선택 — ROI 직후라 가격 저항 최저 -->
 <section class="section">
-  <div class="sec-label">Subscription Plans</div>
-  <h2 class="sec-title">방 당 월 구독<br>3개월 약정 기본</h2>
+  <div class="sec-label">패키지 플랜</div>
+  <h2 class="sec-title">단기임대 자동화 패키지<br>방 당 월 <span class="teal">10만원</span></h2>
 
   <!-- 핵심 가격 강조 -->
   <div class="sub-hero">
     <span class="sub-hero-num">100,000<span style="font-size:32px;color:var(--muted);">원</span></span>
-    <p class="sub-hero-label">방 1개 · 퇴실 청소 기준 · <strong style="color:var(--teal);">횟수 무관 (월 최대 4회)</strong></p>
+    <p class="sub-hero-label">패키지 1개 · 방 1개 기준 · <strong style="color:var(--teal);">횟수 무관 (월 최대 4회)</strong></p>
   </div>
 
   <!-- 구독 플랜 -->
@@ -699,7 +974,7 @@ body, body * {
 
   <!-- 구독에 포함된 것 -->
   <div class="sub-includes">
-    <div class="sub-includes-title">구독 포함 내용 — 모든 플랜 동일</div>
+    <div class="sub-includes-title">자동화 패키지 7개 모듈 — 모든 플랜 동일</div>
     <div class="sub-include-item"><span class="sub-dot"></span>퇴실 청소 횟수 무관 — 월 최대 4회 정액 (중간 청소 별도)</div>
     <div class="sub-include-item"><span class="sub-dot"></span>침실·욕실·주방·창틀 전체 청소</div>
     <div class="sub-include-item"><span class="sub-dot"></span>어메니티 리필 (샴푸·바디워시·다우니 방향제)</div>
@@ -715,16 +990,17 @@ body, body * {
   </div>
 </section>
 
-<!-- ⑧-2 반려동물 패키지 — 별도 add-on -->
+<!-- ⑧-2 반려동물 패키지 — 옵션 상품 (메인 패키지에 추가 구매) -->
 <section class="section">
-  <div class="sec-label">Add-on Package</div>
-  <h2 class="sec-title">반려동물 동반 숙소<br>클린팩 추가</h2>
+  <div class="sec-label">옵션 상품</div>
+  <h2 class="sec-title">반려동물 패키지<br><span class="coral">옵션</span>으로 추가 구매</h2>
+  <p class="sec-desc" style="margin-bottom:1.25rem;">단기임대 자동화 패키지에 옵션 상품으로 추가하실 수 있는 반려동물 전용 케어. 반려동물 동반 투숙객을 받으시는 호스트만 선택하시면 됩니다.</p>
   <div class="pkg pet-pkg">
     <div class="pet-img-wrap">
       <img id="img_dog" alt="반려동물 동반 투숙" class="pet-img" />
       <div class="pet-img-overlay">
-        <span class="pet-img-badge">🐾 Pet Clean Pack</span>
-        <p class="pet-img-copy">애완동반거주 클린팩<br>구독에 추가하세요</p>
+        <span class="pet-img-badge">🐾 Pet Option</span>
+        <p class="pet-img-copy">반려동물 패키지<br>옵션 상품으로 추가</p>
       </div>
     </div>
     <div class="pet-pain">
@@ -735,14 +1011,14 @@ body, body * {
         <div class="pet-pain-item"><span class="x-icon">✕</span>직접 치우러 가야 해서</div>
       </div>
     </div>
-    <div class="pet-solve"><p class="pet-solve-title">클린팩 하나로 전부 해결됩니다</p></div>
-    <div class="pkg-eyebrow" style="margin-top:0.875rem;">애완동반거주 클린팩 — 구독 Add-on</div>
+    <div class="pet-solve"><p class="pet-solve-title">옵션 추가 한 번으로 전부 해결됩니다</p></div>
+    <div class="pkg-eyebrow" style="margin-top:0.875rem;">반려동물 패키지 — 옵션 상품</div>
     <div class="pkg-top">
-      <div><span class="pkg-name">반려동물 클린팩</span><span class="pkg-sub">구독 + 추가 요금</span></div>
+      <div><span class="pkg-name">반려동물 패키지</span><span class="pkg-sub">메인 패키지 + 옵션 요금</span></div>
       <div class="pkg-price"><span class="pkg-amount" style="font-size:22px;">+80,000</span><span class="pkg-unit">원 / 회</span></div>
     </div>
     <div class="items">
-      <div class="item on"><span class="check on-pet"></span>기본 구독 청소 전체 포함</div>
+      <div class="item on"><span class="check on-pet"></span>메인 패키지 7개 모듈 전체 포함</div>
       <div class="item on"><span class="check on-pet"></span>반려동물 털 전용 청소 (침구·소파·바닥)</div>
       <div class="item on"><span class="check on-pet"></span>피톤치드 연무기 집중 탈취 (2회 처리)</div>
       <div class="item on"><span class="check on-pet"></span>펫 전용 소독제 추가 처리</div>
@@ -750,21 +1026,21 @@ body, body * {
     </div>
     <div class="pet-benefit">
       <div class="pet-benefit-row">
-        <span class="pet-benefit-icon">💰</span>
+        <span class="pet-benefit-num">01</span>
         <div>
           <span class="pet-benefit-title">반려동물 허용 숙소는 희소합니다</span>
           <span class="pet-benefit-desc">단기임대 플랫폼 내 애완동반 허용 매물 10~15% 수준 — 희소성이 곧 프리미엄 단가입니다</span>
         </div>
       </div>
       <div class="pet-benefit-row">
-        <span class="pet-benefit-icon">⭐</span>
+        <span class="pet-benefit-num">02</span>
         <div>
           <span class="pet-benefit-title">다음 투숙객 리뷰 걱정 제로</span>
           <span class="pet-benefit-desc">피톤치드 2회 + 펫 소독 완료 사진 제공 — 냄새 리뷰 클레임 원천 차단</span>
         </div>
       </div>
       <div class="pet-benefit-row">
-        <span class="pet-benefit-icon">📵</span>
+        <span class="pet-benefit-num">03</span>
         <div>
           <span class="pet-benefit-title">직접 방문 없이 원격 완료</span>
           <span class="pet-benefit-desc">퇴실 후 청소·탈취·사진 전송까지 — 호스트는 카카오톡 확인만</span>
@@ -772,17 +1048,16 @@ body, body * {
       </div>
     </div>
     <div class="pet-notice">
-      <span class="pet-notice-icon">🐾</span>
-      <span class="pet-notice-text">애완동반거주 클린팩로, 애완동반 투숙객 추가수요를 잡으세요</span>
+      <span class="pet-notice-text">반려동물 패키지를 옵션으로 추가하면, 반려동물 동반 투숙객 추가 수요까지 잡을 수 있습니다.</span>
     </div>
   </div>
 </section>
 
-<!-- ⑨ PROOF : 신뢰 강화 — 선택 후 확신 -->
+<!-- ⑨ PROOF : 신뢰 강화 — "인증 모듈" -->
 <section class="section">
-  <div class="sec-label">Proof of Clean</div>
-  <h2 class="sec-title">완료 즉시<br>사진 5종 전송</h2>
-  <p class="sec-desc" style="margin-bottom:1.25rem;">직접 방문 없이 앱에서 바로 확인할 수 있습니다.</p>
+  <div class="sec-label">Module Detail · 인증</div>
+  <h2 class="sec-title">사진 5종 자동 전송<br><span class="teal">인증 모듈</span></h2>
+  <p class="sec-desc" style="margin-bottom:1.25rem;">패키지 안에 들어있는 인증 모듈. 청소 완료 즉시 5종 사진이 카카오톡으로 도착합니다.</p>
   <div class="proof-grid">
     <div class="proof-item"><span class="proof-num">01</span><span class="proof-label">침실<br>침대 정리 완료</span></div>
     <div class="proof-item"><span class="proof-num">02</span><span class="proof-label">화장실<br>변기·세면대·바닥</span></div>
@@ -798,11 +1073,10 @@ body, body * {
 
 <!-- ⑩ CTA -->
 <section class="cta-section">
-  <div class="cta-brand">Staycare</div>
-  <h2 class="cta-title">지금 바로<br>문의하세요</h2>
-  <p class="cta-sub">운영 물건 수 · 주기에 맞춰<br>월정액 패키지도 구성 가능합니다</p>
-  <button class="cta-btn" onclick="window.open('http://pf.kakao.com/_xowpqn/chat')">카카오톡으로 문의하기 →</button>
-  <p class="cta-note">수원시 권선구 금곡로 102번길 29 · 옆커폰</p>
+  <div class="cta-brand">Staycare 단기임대 자동화 패키지</div>
+  <h2 class="cta-title">단기임대 자동화 패키지<br>지금 시작하세요</h2>
+  <p class="cta-sub">방 수 · 약정 기간에 맞춰<br>패키지 구성 1분 상담</p>
+  <a class="cta-btn" href="apply.html" style="display:block;text-decoration:none;">신청하기 →</a>
 </section>
 
 <footer class="footer">
@@ -817,8 +1091,46 @@ body, body * {
     </svg>
     <div class="footer-brand">STAY<span>CARE</span></div>
   </div>
-  <div class="footer-copy">단기임대 자동화 전문</div>
+  <div class="footer-copy">단기임대 자동화 패키지</div>
 </footer>
+
+<script>
+/* Reveal-on-scroll — Framer-style entrance animation */
+(function(){
+  var selectors = [
+    '.brand-header',
+    '.hero-eyebrow', '.hero-title', '.hero-sub',
+    '.sec-label', '.sec-title', '.sec-desc',
+    '.module-card', '.module-summary', '.module-addon-hint',
+    '.review-screenshot', '.review-shot', '.fear-verdict',
+    '.identity-card',
+    '.service-photo-card',
+    '.phyto-hero', '.nebulizer-wrap',
+    '.roi-compare', '.roi-savings', '.roi-card', '.roi-bridge',
+    '.sub-hero', '.sub-plan', '.sub-includes', '.sub-note',
+    '.pet-img-wrap', '.pet-pain', '.pet-solve', '.pkg-top', '.items', '.pet-benefit', '.pet-notice',
+    '.proof-item',
+    '.cta-brand', '.cta-title', '.cta-sub', '.cta-btn'
+  ];
+  var els = document.querySelectorAll(selectors.join(','));
+  for (var i = 0; i < els.length; i++) els[i].classList.add('reveal');
+
+  if (!('IntersectionObserver' in window)) {
+    for (var j = 0; j < els.length; j++) els[j].classList.add('is-in');
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    for (var k = 0; k < entries.length; k++) {
+      var e = entries[k];
+      if (e.isIntersecting) {
+        e.target.classList.add('is-in');
+        io.unobserve(e.target);
+      }
+    }
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  for (var m = 0; m < els.length; m++) io.observe(els[m]);
+})();
+</script>
 
 <script>
 document.getElementById('img_new').src='data:image/png;base64,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';
