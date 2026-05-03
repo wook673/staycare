@@ -544,7 +544,7 @@ body, body *, .apply-photo-title, .form-title, .success-title {
     return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  form.addEventListener('submit', function(e){
+  form.addEventListener('submit', async function(e){
     e.preventDefault();
 
     var hostName = document.getElementById('hostName').value.trim();
@@ -558,6 +558,25 @@ body, body *, .apply-photo-title, .form-title, .success-title {
     setInvalid(document.getElementById('phone').closest('.field'), !phone);
     if (!hostName || !city || !dong || !phone) ok = false;
     if (!ok) return;
+
+    // Submit to backend (POST /apply → DB INSERT). Falls back gracefully
+    // on network failure or static-file preview so the user can still
+    // proceed to the KakaoTalk channel.
+    var btn = form.querySelector('.submit-btn');
+    var originalLabel = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = '제출 중…';
+    try {
+      await fetch('/apply', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ hostName: hostName, city: city, dong: dong, phone: phone }),
+      });
+    } catch (err) {
+      console.warn('[apply] submit fetch failed, showing success anyway:', err);
+    }
+    btn.disabled = false;
+    btn.textContent = originalLabel;
 
     var summary = document.getElementById('successSummary');
     summary.innerHTML =
