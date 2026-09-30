@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>STAYCARE 단기임대 자동화 패키지</title>
-<meta name="description" content="청소·관리비 알림·어메니티 리필·사진 5종 인증까지. 단기임대 호스트를 위한 자동화 패키지 STAYCARE. 호스트는 카카오톡 확인만 하면 됩니다.">
+<meta name="description" content="청소·관리비 알림·사진 5종 인증까지. 단기임대 호스트를 위한 자동화 패키지 STAYCARE. 호스트는 카카오톡 확인만 하면 됩니다.">
 <meta name="theme-color" content="#f7fbfa">
 <meta property="og:title" content="STAYCARE 단기임대 자동화 패키지">
-<meta property="og:description" content="청소·관리비·어메니티·인증까지 패키지 하나로 자동화. 호스트는 카카오톡 확인만.">
+<meta property="og:description" content="청소·관리비·인증까지 패키지 하나로 자동화. 호스트는 카카오톡 확인만.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3c5.5 7 9.5 11.5 9.5 16.3A9.5 9.5 0 0 1 16 29a9.5 9.5 0 0 1-9.5-9.7C6.5 14.5 10.5 10 16 3z' fill='%230E9A78'/%3E%3Cpath d='M11.5 20.5a5 5 0 0 0 3.5 4' stroke='%23d9f2ec' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
@@ -377,16 +377,14 @@ h2 { font-size: clamp(29px, 4.4vw, 46px); }
 .mod:nth-child(2) { grid-column: span 2; }
 .mod:nth-child(3) { grid-column: span 2; }
 .mod:nth-child(4) { grid-column: span 2; }
-.mod:nth-child(5) { grid-column: span 3; }
-.mod:nth-child(6) { grid-column: span 2; }
-.mod:nth-child(7) {
-  grid-column: span 7;
+.mod:nth-child(5) {
+  grid-column: span 5;
   display: flex;
   align-items: center;
   gap: 22px;
   background: linear-gradient(115deg, #eafaf4, var(--canvas) 55%);
 }
-.mod:nth-child(7) .mod-icon { margin-bottom: 0; }
+.mod:nth-child(5) .mod-icon { margin-bottom: 0; }
 .mod-num {
   font-family: var(--font-mono);
   font-size: 11.5px;
@@ -395,7 +393,7 @@ h2 { font-size: clamp(29px, 4.4vw, 46px); }
   display: block;
   margin-bottom: 14px;
 }
-.mod:nth-child(7) .mod-num { margin-bottom: 6px; }
+.mod:nth-child(5) .mod-num { margin-bottom: 6px; }
 .mod-icon {
   width: 46px; height: 46px;
   border-radius: 14px;
@@ -553,41 +551,6 @@ h2 { font-size: clamp(29px, 4.4vw, 46px); }
 .care-card h3 { font-size: 20px; margin-bottom: 10px; }
 .care-card p { font-size: 15px; color: var(--ink-soft); }
 .care-card p strong { color: var(--ink); }
-.phyto {
-  grid-column: 1 / -1;
-  background: linear-gradient(120deg, #0f3a30, #14574a 60%, #0f3a30);
-  color: #e8f7f1;
-  border-radius: 26px;
-  padding: clamp(30px, 4.5vw, 52px);
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
-  gap: clamp(24px, 4vw, 48px);
-  align-items: center;
-  overflow: clip;
-  position: relative;
-}
-.phyto .kicker {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: .24em;
-  color: #7de3c3;
-}
-.phyto h3 { font-size: clamp(24px, 3vw, 34px); color: #fff; margin: 12px 0 10px; }
-.phyto .phyto-lead { font-size: 16.5px; color: #cdeee2; }
-.phyto .phyto-fog-name { margin-top: 22px; font-weight: 700; color: #fff; font-size: 17px; }
-.phyto .phyto-desc { margin-top: 6px; font-size: 15px; color: #b9e3d6; }
-.phyto-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-.phyto-tags span {
-  font-size: 13.5px;
-  font-weight: 600;
-  background: rgba(255, 255, 255, .1);
-  border: 1px solid rgba(125, 227, 195, .35);
-  color: #d3f3e8;
-  border-radius: 999px;
-  padding: 8px 15px;
-}
-.phyto-art { display: grid; place-items: center; }
-.phyto-art svg { width: min(230px, 80%); height: auto; }
 
 /* ===== 비용 분석: 대결형 2칼럼 ===== */
 .duel {
@@ -1006,12 +969,9 @@ footer {
   .hero-art { max-width: 460px; margin-inline: auto; }
   .mod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .mod:nth-child(n) { grid-column: span 1; }
-  .mod:nth-child(7) { grid-column: span 2; }
+  .mod:nth-child(5) { grid-column: span 2; }
   .why-grid { grid-template-columns: 1fr; }
   .why-card:nth-child(2), .why-card:nth-child(3) { margin-top: 0; }
-  .phyto { grid-template-columns: 1fr; }
-  .phyto-art { order: -1; }
-  .phyto-art svg { width: min(180px, 55%); }
   .plan-grid { grid-template-columns: 1fr; max-width: 460px; margin-inline: auto; }
   .plan-best { transform: none; }
   .plan-best:hover { transform: translateY(-5px); }
@@ -1032,7 +992,7 @@ footer {
 }
 @media (max-width: 560px) {
   .mod-grid { grid-template-columns: 1fr; }
-  .mod:nth-child(7) { grid-column: span 1; flex-direction: column; align-items: flex-start; }
+  .mod:nth-child(5) { grid-column: span 1; flex-direction: column; align-items: flex-start; }
   .hero-cta .btn { width: 100%; }
 }
 </style>
@@ -1066,16 +1026,13 @@ footer {
   <defs>
     <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.5c3.9 5 6.8 8.3 6.8 11.7A6.8 6.8 0 0 1 12 21a6.8 6.8 0 0 1-6.8-6.8C5.2 10.8 8.1 7.5 12 2.5z"/><path d="M8.8 15a3.6 3.6 0 0 0 2.5 2.9"/></symbol>
     <symbol id="i-clean" viewBox="0 0 24 24"><path d="M8.5 9.5h6l1 9.5a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1z"/><path d="M10 9.5V6h3v3.5M10 6V4h6"/><circle cx="19.6" cy="7" r="1"/><circle cx="21.2" cy="10.2" r="1"/><circle cx="19.6" cy="13.4" r="1"/></symbol>
-    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19.5C5 10.5 11 5 20.5 4c-1 9.5-6.5 15.5-15.5 15.5z"/><path d="M5 19.5C8 13 12 9 17 6.5"/></symbol>
     <symbol id="i-bill" viewBox="0 0 24 24"><path d="M7 3h10v18l-2.5-1.6L12 21l-2.5-1.6L7 21z"/><path d="M10 8h4M10 12h4"/></symbol>
-    <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M9.5 10 9 20a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1l-.5-10z"/><path d="M11 10V6.5h2V10M11 4.5h5.5"/></symbol>
     <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 6v13M3 15.5h18M21 19v-6.5a2 2 0 0 0-2-2h-9v5"/><circle cx="6.5" cy="11.5" r="1.7"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7.5 8.5 6 8.5-6"/></symbol>
     <symbol id="i-cam" viewBox="0 0 24 24"><path d="M4 8h4l2-2.5h4L16 8h4v11H4z"/><circle cx="12" cy="13" r="3.2"/></symbol>
     <symbol id="i-drain" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 10h7M8.5 13h7M10.2 16h3.6"/></symbol>
     <symbol id="i-window" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M12 4v16M4 12h16"/></symbol>
     <symbol id="i-scent" viewBox="0 0 24 24"><path d="M9 11h6l1 8.5a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z"/><path d="M10 11V9h4v2"/><path d="M9 5.2c1.7 1.3 4.3 1.3 6 0"/></symbol>
-    <symbol id="i-fog" viewBox="0 0 24 24"><path d="M7 15.5a4 4 0 1 1 .7-7.9A5 5 0 0 1 17.3 9 3.4 3.4 0 0 1 17 15.5z"/><path d="M8 19h.01M12 20h.01M16 19h.01"/></symbol>
     <symbol id="i-bath" viewBox="0 0 24 24"><path d="M4 12.5h16V15a4.5 4.5 0 0 1-4.5 4.5h-7A4.5 4.5 0 0 1 4 15z"/><path d="M6 12.5V5.8A1.8 1.8 0 0 1 9.6 5.5"/></symbol>
     <symbol id="i-pan" viewBox="0 0 24 24"><path d="M5 10.5h14V16a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/><path d="M3 10.5h18M10 7.5v3M14 5.5v5"/></symbol>
     <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9.5 7V4.5h5V7M6 7l1 13.5h10L18 7"/><path d="M10 11v5.5M14 11v5.5"/></symbol>
@@ -1116,12 +1073,12 @@ footer {
           <path class="wipe-line" d="M6 24 C 140 10, 380 34, 554 16" pathLength="100"/>
         </svg>
       </div>
-      <p class="hero-sub">청소·관리비·어메니티·인증까지, 패키지 하나로 자동화. 호스트는 카카오톡 확인만 하면 됩니다.</p>
+      <p class="hero-sub">청소·관리비·인증까지, 패키지 하나로 자동화. 호스트는 카카오톡 확인만 하면 됩니다.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="/apply">신청하기</a>
         <a class="btn btn-ghost" href="#pricing">요금 보기</a>
       </div>
-      <p class="hero-note">7 MODULES · 1 PACKAGE</p>
+      <p class="hero-note">5 MODULES · 1 PACKAGE</p>
     </div>
     <div class="hero-art" aria-hidden="true" data-reveal>
       <svg viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -1133,32 +1090,24 @@ footer {
         <path d="M96 372 C 190 330, 380 330, 470 368" stroke="#0E9A78" stroke-width="4" stroke-linecap="round" opacity=".45"/>
         <path d="M96 372 C 190 330, 380 330, 470 368" stroke="#d9f2ec" stroke-width="18" stroke-linecap="round" opacity=".55"/>
         <g class="orbit-node">
-          <circle cx="118" cy="180" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
-          <g transform="translate(104 166)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-clean" width="28" height="28"/></g>
+          <circle cx="106" cy="212" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
+          <g transform="translate(92 198)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-clean" width="28" height="28"/></g>
         </g>
         <g class="orbit-node">
           <circle cx="280" cy="96" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
-          <g transform="translate(266 82)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-leaf" width="28" height="28"/></g>
+          <g transform="translate(266 82)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bill" width="28" height="28"/></g>
         </g>
         <g class="orbit-node">
-          <circle cx="446" cy="176" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
-          <g transform="translate(432 162)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bill" width="28" height="28"/></g>
+          <circle cx="454" cy="212" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
+          <g transform="translate(440 198)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bed" width="28" height="28"/></g>
         </g>
         <g class="orbit-node">
-          <circle cx="500" cy="316" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
-          <g transform="translate(486 302)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bottle" width="28" height="28"/></g>
+          <circle cx="388" cy="424" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
+          <g transform="translate(374 410)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mail" width="28" height="28"/></g>
         </g>
         <g class="orbit-node">
-          <circle cx="368" cy="428" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
-          <g transform="translate(354 414)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bed" width="28" height="28"/></g>
-        </g>
-        <g class="orbit-node">
-          <circle cx="196" cy="434" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
-          <g transform="translate(182 420)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mail" width="28" height="28"/></g>
-        </g>
-        <g class="orbit-node">
-          <circle cx="72" cy="308" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
-          <g transform="translate(58 294)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-cam" width="28" height="28"/></g>
+          <circle cx="172" cy="424" r="30" fill="#fff" stroke="#d9f2ec" stroke-width="2"/>
+          <g transform="translate(158 410)" stroke="#0a7a5f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#i-cam" width="28" height="28"/></g>
         </g>
       </svg>
     </div>
@@ -1175,18 +1124,16 @@ footer {
         <span class="col-label col-pkg"><span class="lg">STAYCARE </span>패키지</span>
       </div>
       <div class="compare-row"><span>퇴실 청소</span><span class="mark yes" role="img" aria-label="포함">O</span><span class="mark yes pkg" role="img" aria-label="포함">O</span></div>
-      <div class="compare-row"><span>어메니티 리필</span><span class="mark no" role="img" aria-label="미포함">X</span><span class="mark yes pkg" role="img" aria-label="포함">O</span></div>
       <div class="compare-row"><span>침구 시트 교체</span><span class="mark no" role="img" aria-label="미포함">X</span><span class="mark yes pkg" role="img" aria-label="포함">O</span></div>
       <div class="compare-row"><span>관리비·우편물 알림</span><span class="mark no" role="img" aria-label="미포함">X</span><span class="mark yes pkg" role="img" aria-label="포함">O</span></div>
       <div class="compare-row"><span>완료 사진 5종 인증</span><span class="mark no" role="img" aria-label="미포함">X</span><span class="mark yes pkg" role="img" aria-label="포함">O</span></div>
-      <div class="compare-row"><span>피톤치드 살균·탈취</span><span class="mark no" role="img" aria-label="미포함">X</span><span class="mark yes pkg" role="img" aria-label="포함">O</span></div>
       <div class="compare-row"><span>월 정액 (최대 4회)</span><span class="mark no" role="img" aria-label="미포함">X</span><span class="mark yes pkg" role="img" aria-label="포함">O</span></div>
       <p class="compare-note">단발 청소는 일반적인 퇴실청소 기준이며 업체별로 다를 수 있습니다.</p>
     </div>
   </div>
 </section>
 
-<!-- 2. 7개 모듈 -->
+<!-- 2. 5개 모듈 -->
 <section class="modules-band" id="modules">
   <div class="shell">
     <div class="sec-head" data-reveal>
@@ -1197,7 +1144,7 @@ footer {
           <path class="wipe-line" d="M4 16 C 90 6, 230 22, 316 10" pathLength="100"/>
         </svg>
       </div>
-      <h2>7개 모듈</h2>
+      <h2>5개 모듈</h2>
       <p class="lead">청소부터 관리비 알림까지, 패키지 하나로 호스트가 신경 쓸 모든 일이 끝납니다.</p>
     </div>
     <div class="mod-grid" data-reveal-group>
@@ -1209,30 +1156,18 @@ footer {
       </article>
       <article class="mod" data-reveal>
         <span class="mod-num">MODULE 02</span>
-        <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-leaf"/></svg></span>
-        <h3>피톤치드 살균</h3>
-        <p>초미세 입자 분사 99.9% 살균·탈취</p>
-      </article>
-      <article class="mod" data-reveal>
-        <span class="mod-num">MODULE 03</span>
         <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-bill"/></svg></span>
         <h3>관리비 알림</h3>
         <p>우편함 고지서 사진 즉시 전송</p>
       </article>
       <article class="mod" data-reveal>
-        <span class="mod-num">MODULE 04</span>
-        <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-bottle"/></svg></span>
-        <h3>어메니티 리필</h3>
-        <p>수건·샴푸·바디워시·치약 보충</p>
-      </article>
-      <article class="mod" data-reveal>
-        <span class="mod-num">MODULE 05</span>
+        <span class="mod-num">MODULE 03</span>
         <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-bed"/></svg></span>
         <h3>침구 시트 교체</h3>
         <p>매 퇴실마다 새 시트로 교체</p>
       </article>
       <article class="mod" data-reveal>
-        <span class="mod-num">MODULE 06</span>
+        <span class="mod-num">MODULE 04</span>
         <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg></span>
         <h3>우편물 알림</h3>
         <p>도착 즉시 사진 알림</p>
@@ -1240,13 +1175,13 @@ footer {
       <article class="mod" data-reveal>
         <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-cam"/></svg></span>
         <div>
-          <span class="mod-num">MODULE 07</span>
+          <span class="mod-num">MODULE 05</span>
           <h3>사진 5종 인증</h3>
           <p>청소 완료 즉시 5종 사진 전송 · 직접 방문 없이 원격 확인</p>
         </div>
       </article>
     </div>
-    <p class="mod-tagline" data-reveal>한 번의 신청 = 7개 모듈 자동 실행 · <strong>호스트는 카카오톡 확인만</strong></p>
+    <p class="mod-tagline" data-reveal>한 번의 신청 = 5개 모듈 자동 실행 · <strong>호스트는 카카오톡 확인만</strong></p>
   </div>
 </section>
 
@@ -1302,7 +1237,7 @@ footer {
       <article class="why-card" data-reveal>
         <span class="why-num">02</span>
         <h3>부업 호스트의 시간을 되돌려드립니다</h3>
-        <p>퇴실마다 어메니티 채우러 직접 방문하고 계신가요? 완료 사진 5종으로 현장 확인 없이 원격 관리하세요.</p>
+        <p>퇴실마다 직접 방문하고 계신가요? 완료 사진 5종으로 현장 확인 없이 원격 관리하세요.</p>
         <span class="why-tag">REMOTE MANAGEMENT</span>
       </article>
       <article class="why-card" data-reveal>
@@ -1380,7 +1315,7 @@ footer {
         </svg>
       </div>
       <h2>패키지 안에 들어있는<br>케어 모듈</h2>
-      <p class="lead">관리비 고지서 알림 · 어메니티 리필 · 피톤치드 살균, 단기임대 자동화 패키지에 기본 포함된 케어 모듈입니다.</p>
+      <p class="lead">관리비 고지서 알림 · 우편물 알림, 단기임대 자동화 패키지에 기본 포함된 케어 모듈입니다.</p>
     </div>
     <div class="care-grid" data-reveal-group>
       <article class="care-card" data-reveal>
@@ -1389,27 +1324,9 @@ footer {
         <p><strong>우편함 관리비, 즉시 사진 전송.</strong> 전기·수도 미납 사고를 사전에 차단합니다.</p>
       </article>
       <article class="care-card" data-reveal>
-        <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-bottle"/></svg></span>
-        <h3>어메니티 리필</h3>
-        <p><strong>수건·세면 용품 매 회차 보충.</strong> 샴푸·바디워시·치약까지 호텔급 컨디션을 유지합니다.</p>
-      </article>
-      <article class="phyto" data-reveal>
-        <div>
-          <p class="kicker">PHYTONCIDE</p>
-          <h3>피톤치드</h3>
-          <p class="phyto-lead">식물이 분비하는 천연 항균·탈취 물질. 삼림욕의 상쾌함을 숙소에서 재현합니다.</p>
-          <p class="phyto-fog-name">피톤치드 연무기</p>
-          <p class="phyto-desc">초미세 입자 분사로 공간 구석구석 살균·탈취. 단기임대 자동화 패키지 및 반려동물 패키지에 기본 적용됩니다.</p>
-          <div class="phyto-tags">
-            <span>담배 냄새 제거</span>
-            <span>반려동물 탈취</span>
-            <span>99.9% 살균</span>
-            <span>새집증후군 제거</span>
-          </div>
-        </div>
-        <div class="phyto-art" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#7de3c3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-fog"/></svg>
-        </div>
+        <span class="mod-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <h3>우편물 알림</h3>
+        <p><strong>도착 즉시 사진 알림.</strong> 관리비·청구서·우편물, 도착 시 즉시 전송합니다.</p>
       </article>
     </div>
   </div>
@@ -1512,10 +1429,8 @@ footer {
     <div class="plan-includes" data-reveal>
       <h3>모든 플랜에 포함</h3>
       <ul class="check-list">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span><strong>자동화 패키지 7개 모듈</strong> · 모든 플랜 동일</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span><strong>자동화 패키지 5개 모듈</strong> · 모든 플랜 동일</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span><strong>퇴실 청소 횟수 무관</strong> · 월 최대 4회 정액 (중간 청소 별도)</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>어메니티 리필 (샴푸·바디워시·다우니 방향제)</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>피톤치드 연무기 탈취 소독</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>청소 완료 사진 5종 즉시 전송</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>청구서·관리비·우편물 도착 알림</span></li>
       </ul>
@@ -1570,9 +1485,8 @@ footer {
           <p class="pet-price-label">메인 패키지 + 옵션 요금</p>
           <p class="pet-price">+80,000<small>원 / 회</small></p>
           <ul class="pet-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>메인 패키지 7개 모듈 전체 포함</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>메인 패키지 5개 모듈 전체 포함</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>반려동물 털 전용 청소 (침구·소파·바닥)</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>피톤치드 연무기 집중 탈취 (2회 처리)</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>펫 전용 소독제 추가 처리</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg><span>펫 냄새 완전 제거 후 사진 증빙</span></li>
           </ul>
